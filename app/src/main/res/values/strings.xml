@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Icon</string>
+    <string name="fox_image_content_description">Loading fox</string>
 </resources>

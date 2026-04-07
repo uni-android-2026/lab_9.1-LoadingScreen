@@ -1,5 +1,6 @@
 package su.ioplock.icon;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -9,10 +10,18 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
+    public static final String EXTRA_SKIP_SPLASH = "su.ioplock.icon.extra.SKIP_SPLASH";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        if (!getIntent().getBooleanExtra(EXTRA_SKIP_SPLASH, false)) {
+            startActivity(new Intent(this, SplashActivity.class));
+            finish();
+            return;
+        }
+
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
