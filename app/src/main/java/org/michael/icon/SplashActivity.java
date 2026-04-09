@@ -1,4 +1,4 @@
-package su.ioplock.icon;
+package org.michael.icon;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -26,9 +26,9 @@ public class SplashActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splashscreen);
 
-        ImageView foxImage = findViewById(R.id.foxImage);
+        ImageView robotImage = findViewById(R.id.robotImage);
         Animation fadeInAnimation = AnimationUtils.loadAnimation(this, R.anim.fadein);
-        foxImage.startAnimation(fadeInAnimation);
+        robotImage.startAnimation(fadeInAnimation);
 
         handler.postDelayed(openMainScreen, SPLASH_DURATION_MS);
     }

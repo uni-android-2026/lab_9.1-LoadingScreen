@@ -1,4 +1,4 @@
-package su.ioplock.icon;
+package org.michael.icon;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-    public static final String EXTRA_SKIP_SPLASH = "su.ioplock.icon.extra.SKIP_SPLASH";
+    public static final String EXTRA_SKIP_SPLASH = "org.michael.icon.extra.SKIP_SPLASH";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,4 +1,4 @@
-package su.ioplock.icon;
+package org.michael.icon;
 
 import org.junit.Test;
 

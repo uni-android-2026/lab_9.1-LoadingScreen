@@ -22,13 +22,13 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/foxImage"
+        android:id="@+id/robotImage"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:adjustViewBounds="true"
-        android:contentDescription="@string/fox_image_content_description"
+        android:contentDescription="@string/robot_image_content_description"
         android:scaleType="fitCenter"
-        android:src="@drawable/fox_loading"
+        android:src="@drawable/robot"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="1:1"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,9 +42,9 @@
         android:layout_height="wrap_content"
         android:indeterminate="true"
         android:indeterminateTint="@android:color/holo_orange_dark"
-        app:layout_constraintBottom_toTopOf="@id/foxImage"
-        app:layout_constraintEnd_toEndOf="@id/foxImage"
-        app:layout_constraintStart_toStartOf="@id/foxImage"
+        app:layout_constraintBottom_toTopOf="@id/robotImage"
+        app:layout_constraintEnd_toEndOf="@id/robotImage"
+        app:layout_constraintStart_toStartOf="@id/robotImage"
         app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

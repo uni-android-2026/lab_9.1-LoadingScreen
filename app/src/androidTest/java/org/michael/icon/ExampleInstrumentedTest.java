@@ -1,4 +1,4 @@
-package su.ioplock.icon;
+package org.michael.icon;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("su.ioplock.icon", appContext.getPackageName());
+        assertEquals("org.michael.icon", appContext.getPackageName());
     }
 }

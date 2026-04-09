@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "su.ioplock.icon"
+    namespace = "org.michael.icon"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "su.ioplock.icon"
+        applicationId = "org.michael.icon"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
